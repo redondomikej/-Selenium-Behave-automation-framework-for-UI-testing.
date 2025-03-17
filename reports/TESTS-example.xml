@@ -1,0 +1,62 @@
+<testsuite name="example.Login and Navigate to Pages" tests="2" errors="0" failures="1" skipped="0" time="11.385331" timestamp="2025-03-18T01:44:14.764897" hostname="Admin"><testcase classname="example.Login and Navigate to Pages" name="Successful login" status="passed" time="6.477449"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Successful login
+    Given I open the browser ... passed in 3.720s
+    When I enter the username "student" ... passed in 0.092s
+    And I enter the password "Password123" ... passed in 0.075s
+    And I click the login button ... passed in 2.558s
+    Then I should see the success message "Logged In Successfully" ... passed in 0.032s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+🎥 Capturing frame for step: I open the browser
+🎥 Capturing frame for step: I enter the username "student"
+🎥 Capturing frame for step: I enter the password "Password123"
+🎥 Capturing frame for step: I click the login button
+🎥 Capturing frame for step: I should see the success message "Logged In Successfully"
+
+]]>
+</system-out></testcase><testcase classname="example.Login and Navigate to Pages" name="Invalid login" status="failed" time="4.907882"><failure type="AssertionError" message="Expected 'Invalid login' but got 'Logged In Successfully'">
+<![CDATA[
+Failing step: Then I should see the success message "Invalid login" ... failed in 0.047s
+Location: features/example.feature:14
+Assertion Failed: Expected 'Invalid login' but got 'Logged In Successfully'
+Captured stdout:
+🎥 Capturing frame for step: I open the browser
+🎥 Capturing frame for step: I enter the username "student"
+🎥 Capturing frame for step: I enter the password "Password123"
+🎥 Capturing frame for step: I click the login button
+🎥 Capturing frame for step: I should see the success message "Invalid login"
+❌ Step failed: I should see the success message "Invalid login"
+📂 Screenshot directory: test_evidence/screenshots
+📸 Saving screenshot to: test_evidence/screenshots\Invalid_login_20250318-014414.png
+✅ Screenshot saved successfully: test_evidence/screenshots\Invalid_login_20250318-014414.png]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Invalid login
+    Given I open the browser ... passed in 2.288s
+    When I enter the username "student" ... passed in 0.131s
+    And I enter the password "Password123" ... passed in 0.097s
+    And I click the login button ... passed in 2.345s
+    Then I should see the success message "Invalid login" ... failed in 0.047s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+🎥 Capturing frame for step: I open the browser
+🎥 Capturing frame for step: I enter the username "student"
+🎥 Capturing frame for step: I enter the password "Password123"
+🎥 Capturing frame for step: I click the login button
+🎥 Capturing frame for step: I should see the success message "Invalid login"
+❌ Step failed: I should see the success message "Invalid login"
+📂 Screenshot directory: test_evidence/screenshots
+📸 Saving screenshot to: test_evidence/screenshots\Invalid_login_20250318-014414.png
+✅ Screenshot saved successfully: test_evidence/screenshots\Invalid_login_20250318-014414.png
+
+]]>
+</system-out></testcase></testsuite>
